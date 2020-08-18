@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\M\\Desktop\\Noormi\\Noormi\\Noormi\\Noormi.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\M\\Desktop\\Noormi\\Noormi\\Noormi\\Noormi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\M\\Desktop\\Noormi\\Noormi\\Noormi\\Noormi.csproj",
+        "projectName": "Noormi",
+        "projectPath": "C:\\Users\\M\\Desktop\\Noormi\\Noormi\\Noormi\\Noormi.csproj",
+        "packagesPath": "C:\\Users\\M\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\M\\Desktop\\Noormi\\Noormi\\Noormi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\M\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.4.0.991640, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Users\\M\\.dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

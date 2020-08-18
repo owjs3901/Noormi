@@ -1,0 +1,12 @@
+C:\Users\M\Desktop\Noormi\Noormi\Noormi\bin\Debug\netstandard2.0\Noormi.deps.json
+C:\Users\M\Desktop\Noormi\Noormi\Noormi\bin\Debug\netstandard2.0\Noormi.dll
+C:\Users\M\Desktop\Noormi\Noormi\Noormi\bin\Debug\netstandard2.0\Noormi.pdb
+C:\Users\M\Desktop\Noormi\Noormi\Noormi\obj\Debug\netstandard2.0\Noormi.csprojAssemblyReference.cache
+C:\Users\M\Desktop\Noormi\Noormi\Noormi\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\M\Desktop\Noormi\Noormi\Noormi\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\M\Desktop\Noormi\Noormi\Noormi\obj\Debug\netstandard2.0\Noormi.AssemblyInfoInputs.cache
+C:\Users\M\Desktop\Noormi\Noormi\Noormi\obj\Debug\netstandard2.0\Noormi.AssemblyInfo.cs
+C:\Users\M\Desktop\Noormi\Noormi\Noormi\obj\Debug\netstandard2.0\Noormi.csproj.CoreCompileInputs.cache
+C:\Users\M\Desktop\Noormi\Noormi\Noormi\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\M\Desktop\Noormi\Noormi\Noormi\obj\Debug\netstandard2.0\Noormi.dll
+C:\Users\M\Desktop\Noormi\Noormi\Noormi\obj\Debug\netstandard2.0\Noormi.pdb
