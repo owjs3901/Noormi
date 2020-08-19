@@ -10,6 +10,26 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Xamarin.Forms" Version="4.4.0.991640"/>
+        <PackageReference Include="Xamarin.Forms" Version="4.4.0.991640" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Splash.xaml">
+        <SubType>Designer</SubType>
+        <Generator></Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="ListPage.xaml">
+        <SubType>Designer</SubType>
+        <Generator></Generator>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Splash.xaml.cs">
+        <DependentUpon>Splash.xaml</DependentUpon>
+      </Compile>
+      <Compile Update="ListPage.xaml.cs">
+        <DependentUpon>ListPage.xaml</DependentUpon>
+      </Compile>
     </ItemGroup>
 </Project>

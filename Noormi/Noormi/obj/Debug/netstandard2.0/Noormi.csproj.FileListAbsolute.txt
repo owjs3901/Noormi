@@ -10,3 +10,5 @@ C:\Users\M\Desktop\Noormi\Noormi\Noormi\obj\Debug\netstandard2.0\Noormi.csproj.C
 C:\Users\M\Desktop\Noormi\Noormi\Noormi\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\M\Desktop\Noormi\Noormi\Noormi\obj\Debug\netstandard2.0\Noormi.dll
 C:\Users\M\Desktop\Noormi\Noormi\Noormi\obj\Debug\netstandard2.0\Noormi.pdb
+C:\Users\M\Desktop\Noormi\Noormi\Noormi\obj\Debug\netstandard2.0\ListPage.xaml.g.cs
+C:\Users\M\Desktop\Noormi\Noormi\Noormi\obj\Debug\netstandard2.0\Splash.xaml.g.cs
