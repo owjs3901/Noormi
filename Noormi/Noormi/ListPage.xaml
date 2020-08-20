@@ -5,9 +5,53 @@
              x:Class="Noormi.ListPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Hello, world!"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
+            <StackLayout BackgroundColor="{StaticResource MainColor}">
+                <Label Text="NOORMI LIST"
+                       Margin="0, 18, 0, 0"
+                       FontSize="20"
+                       TextColor="White"
+                       VerticalOptions="Center"
+                       HorizontalOptions="CenterAndExpand" />
+                <Label Text="01|02"
+                       Margin="0, 0, 0, 10"
+                       FontSize="16"
+                       TextColor="White"
+                       VerticalOptions="Center"
+                       HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+            <ListView x:Name="ItemList" ItemsSource="{Binding Devices}"
+                      RowHeight="94">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Height="94">
+                            <StackLayout Orientation="Horizontal"
+                                         Padding="25">
+                                <Label Text="01"
+                                       FontSize="32"
+                                       TextColor="{StaticResource MainColor}"
+                                       />
+                                <BoxView HeightRequest="24"
+                                         WidthRequest="1"
+                                         VerticalOptions="Center"
+                                         Margin="13, 0"
+                                         Color="#BEBEBE"/>
+                                <StackLayout>
+                                    <Label Text="{Binding Location}"
+                                           FontSize="16"
+                                           FontAttributes="Bold"
+                                           TextColor="{StaticResource MainColor}"
+                                    />
+                                    <Label Text="{Binding ProductName}"
+                                           FontSize="16"
+                                           FontAttributes="Bold"
+                                           TextColor="#707070"
+                                    />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
