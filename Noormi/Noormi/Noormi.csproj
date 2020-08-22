@@ -26,6 +26,12 @@
         <SubType>Designer</SubType>
         <Generator></Generator>
       </EmbeddedResource>
+      <EmbeddedResource Include="Images\d.png">
+        <SubType>Designer</SubType>
+        <Generator></Generator>
+      </EmbeddedResource>
+      <None Remove="d.png" />
+      <None Remove="a.svg" />
     </ItemGroup>
 
     <ItemGroup>

@@ -76,5 +76,8 @@
             <Name>Noormi</Name>
         </ProjectReference>
     </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Resources\drawable" />
+    </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
