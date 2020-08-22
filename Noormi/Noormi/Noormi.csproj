@@ -22,6 +22,10 @@
         <SubType>Designer</SubType>
         <Generator></Generator>
       </EmbeddedResource>
+      <EmbeddedResource Update="ItemPage.xaml">
+        <SubType>Designer</SubType>
+        <Generator></Generator>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -30,6 +34,9 @@
       </Compile>
       <Compile Update="ListPage.xaml.cs">
         <DependentUpon>ListPage.xaml</DependentUpon>
+      </Compile>
+      <Compile Update="ItemPage.xaml.cs">
+        <DependentUpon>ItemPage.xaml</DependentUpon>
       </Compile>
     </ItemGroup>
 </Project>

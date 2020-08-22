@@ -12,7 +12,7 @@ namespace Noormi
         {
             InitializeComponent();
 
-            MainPage = new ListPage();
+            MainPage = new NavigationPage(new ListPage());
         }
 
         protected override void OnStart()
