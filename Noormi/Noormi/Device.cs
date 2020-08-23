@@ -4,6 +4,7 @@ namespace Noormi
 {
     public class Device
     {
+        public int Battery { get; set; }
         public string ProductName { get; } // 디바이스 이름
         public string Location { get; } // 디바이스 위치
         public string RegisterDate { get; } // 등록 일자

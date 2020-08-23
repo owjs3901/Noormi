@@ -30,7 +30,7 @@ namespace Noormi
         {
             Device device = Devices[e.ItemIndex];
             
-            Navigation.PushAsync(new ItemPage(device));
+            Navigation.PushAsync(new ItemPage(device, e.ItemIndex, Devices.Count));
         }
     }
 }

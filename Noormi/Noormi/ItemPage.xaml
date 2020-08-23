@@ -2,10 +2,57 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Noormi;assembly=Noormi"
              x:Class="Noormi.ItemPage">
     <ContentPage.Content>
         <StackLayout>
-            
+            <StackLayout
+                Margin="0, 20, 0, 0"
+                HorizontalOptions="FillAndExpand"
+                Orientation="Horizontal">
+                <ImageButton
+                    VerticalOptions="Center"
+                    BackgroundColor="Transparent"
+                    Margin="56, 0, 0, 0"
+                    WidthRequest="12"
+                    HeightRequest="20"
+                    Source="{local:ImageResource disable.png}"/>
+                <StackLayout
+                    HorizontalOptions="FillAndExpand">
+                    <StackLayout
+                        HorizontalOptions="Center"
+                        Orientation="Horizontal">
+                        <Image/>
+                        <Label/>
+                    </StackLayout>
+                    <Label
+                        HorizontalOptions="Center"
+                        Text="{Binding Location}"/>
+                    <StackLayout
+                        HorizontalOptions="Center"
+                        Orientation="Horizontal">
+                        <Label x:Name="Index"/>
+                        <BoxView HeightRequest="24"
+                                 WidthRequest="1"
+                                 VerticalOptions="Center"
+                                 Margin="13, 0"
+                                 Color="#BEBEBE"/>
+                        <Label x:Name="Size"/>
+                    </StackLayout>
+                </StackLayout>
+                <ImageButton
+                    VerticalOptions="Center"
+                    BackgroundColor="Transparent"
+                    Margin="0, 0, 56, 0"
+                    WidthRequest="12"
+                    HeightRequest="20"
+                    ScaleX="-1"
+                    Source="{local:ImageResource disable.png}"/>
+            </StackLayout>
+            <Image
+                VerticalOptions="FillAndExpand"
+                Source="{local:ImageResource bottle.png}"/>
+            <Button></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
