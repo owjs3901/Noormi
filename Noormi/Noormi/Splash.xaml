@@ -2,6 +2,8 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:noormi="clr-namespace:Noormi;assembly=Noormi"
+             xmlns:forms="http://xamarin.com/schemas/2014/forms"
              x:Class="Noormi.Splash">
     <ContentPage.Content>
         <StackLayout BackgroundColor="{StaticResource MainColor}">
@@ -9,5 +11,6 @@
                    VerticalOptions="CenterAndExpand"
                    HorizontalOptions="CenterAndExpand" />
         </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>

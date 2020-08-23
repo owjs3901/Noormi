@@ -15,7 +15,7 @@ namespace Noormi
         public ItemPage()
         {
             InitializeComponent();
-            
+            //var bottle
             NavigationPage.SetHasNavigationBar(this, false);
         }
     }

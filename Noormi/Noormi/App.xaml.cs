@@ -11,8 +11,8 @@ namespace Noormi
         public App()
         {
             InitializeComponent();
-
-            MainPage = new NavigationPage(new ListPage());
+            MainPage = new Splash();
+            //MainPage = new NavigationPage(new ListPage());
         }
 
         protected override void OnStart()
