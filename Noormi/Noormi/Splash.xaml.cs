@@ -17,12 +17,12 @@ namespace Noormi
         {
             InitializeComponent();
             
-            // Task.Delay(3000)
-            //     .ContinueWith(t =>
-            //         Xamarin.Forms.Device.BeginInvokeOnMainThread(() =>
-            //             Application.Current.MainPage = new NavigationPage(new ListPage())
-            //         )
-            //     );
+            Task.Delay(3000)
+                .ContinueWith(t =>
+                    Xamarin.Forms.Device.BeginInvokeOnMainThread(() =>
+                        Application.Current.MainPage = new NavigationPage(new ListPage())
+                    )
+                );
         }
 
     }
