@@ -34,6 +34,10 @@
       <None Remove="a.svg" />
       <None Remove="Images\icon.png" />
       <EmbeddedResource Include="Images\icon.png" />
+      <None Remove="NotoSansCJKkr-hinted\NotoSansCJKkr-Black.otf" />
+      <EmbeddedResource Include="NotoSansCJKkr-hinted\NotoSansCJKkr-Black.otf" />
+      <None Remove="NotoSansCJKkr-hinted\NotoSansCJKkr-Bold.otf" />
+      <EmbeddedResource Include="NotoSansCJKkr-hinted\NotoSansCJKkr-Bold.otf" />
     </ItemGroup>
 
     <ItemGroup>
