@@ -32,6 +32,8 @@
       </EmbeddedResource>
       <None Remove="d.png" />
       <None Remove="a.svg" />
+      <None Remove="Images\icon.png" />
+      <EmbeddedResource Include="Images\icon.png" />
     </ItemGroup>
 
     <ItemGroup>

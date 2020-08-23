@@ -2,12 +2,26 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Noormi;assembly=Noormi"
              x:Class="Noormi.Splash">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="{StaticResource MainColor}">
-            <Label Text="Hello, world!"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <RelativeLayout BackgroundColor="{StaticResource MainColor}" >
+           
+            <StackLayout
+                WidthRequest="300"
+                HeightRequest="300"
+
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.5, Constant=-150}"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-150}"
+                AnchorX="50">
+                <Image WidthRequest="90" HeightRequest="90" HorizontalOptions="Center"
+                       Source="{local:ImageResource icon.png}" />
+                <Label
+                    HorizontalOptions="Center"
+                    Text="누르미"
+                    FontSize="32"
+                    TextColor="White" />
+            </StackLayout>
+        </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>
