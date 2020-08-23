@@ -11,6 +11,7 @@
                 HorizontalOptions="FillAndExpand"
                 Orientation="Horizontal">
                 <ImageButton
+                    x:Name="Left"
                     VerticalOptions="Center"
                     BackgroundColor="Transparent"
                     Margin="56, 0, 0, 0"
@@ -41,6 +42,7 @@
                     </StackLayout>
                 </StackLayout>
                 <ImageButton
+                    x:Name="Right"
                     VerticalOptions="Center"
                     BackgroundColor="Transparent"
                     Margin="0, 0, 56, 0"
