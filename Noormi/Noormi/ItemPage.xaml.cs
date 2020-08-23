@@ -12,11 +12,14 @@ namespace Noormi
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ItemPage : ContentPage
     {
-        public ItemPage()
+        private Device _device;
+        public ItemPage(Device device)
         {
             InitializeComponent();
-            //var bottle
+            
             NavigationPage.SetHasNavigationBar(this, false);
+            
+            _device = device;
         }
     }
 }

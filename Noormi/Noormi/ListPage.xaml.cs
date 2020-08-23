@@ -28,9 +28,9 @@ namespace Noormi
 
         private void ItemList_OnItemTapped(object sender, ItemTappedEventArgs e)
         {
-            Console.WriteLine("Hello");
-            // Device device = Devices[e.SelectedItemIndex];
-            Navigation.PushAsync(new ItemPage());
+            Device device = Devices[e.ItemIndex];
+            
+            Navigation.PushAsync(new ItemPage(device));
         }
     }
 }
