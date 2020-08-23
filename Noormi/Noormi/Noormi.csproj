@@ -34,12 +34,6 @@
       <None Remove="a.svg" />
       <None Remove="Images\icon.png" />
       <EmbeddedResource Include="Images\icon.png" />
-      <None Remove="Images\bottle.png" />
-      <EmbeddedResource Include="Images\bottle.png" />
-      <None Remove="Images\enable.png" />
-      <EmbeddedResource Include="Images\enable.png" />
-      <None Remove="Images\disable.png" />
-      <EmbeddedResource Include="Images\disable.png" />
     </ItemGroup>
 
     <ItemGroup>
