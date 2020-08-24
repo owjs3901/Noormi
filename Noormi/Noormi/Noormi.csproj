@@ -34,6 +34,16 @@
       <None Remove="a.svg" />
       <None Remove="Images\icon.png" />
       <EmbeddedResource Include="Images\icon.png" />
+      <None Remove="Images\button_B.png" />
+      <EmbeddedResource Include="Images\button_B.png" />
+      <None Remove="Images\bottle.png" />
+      <EmbeddedResource Include="Images\bottle.png" />
+      <None Remove="Images\blueCircle.png" />
+      <EmbeddedResource Include="Images\blueCircle.png" />
+      <None Remove="Images\disable.png" />
+      <EmbeddedResource Include="Images\disable.png" />
+      <None Remove="Images\enable.png" />
+      <EmbeddedResource Include="Images\enable.png" />
     </ItemGroup>
 
     <ItemGroup>
