@@ -16,7 +16,6 @@ namespace Noormi
         public Splash()
         {
             InitializeComponent();
-            
             Task.Delay(3000)
                 .ContinueWith(t =>
                     Xamarin.Forms.Device.BeginInvokeOnMainThread(() =>
