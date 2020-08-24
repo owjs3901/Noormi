@@ -51,10 +51,46 @@
                     ScaleX="-1"
                     Source="{local:ImageResource disable.png}"/>
             </StackLayout>
-            <Image
-                VerticalOptions="FillAndExpand"
-                Source="{local:ImageResource bottle.png}"/>
-            <Button></Button>
+            <RelativeLayout HorizontalOptions="Center">
+                <Image
+                    HorizontalOptions="Center"
+                    VerticalOptions="FillAndExpand"
+                    WidthRequest="200" 
+                    HeightRequest="400"
+                    Source="{local:ImageResource bottle.png}"/>
+            </RelativeLayout>
+            
+            <RelativeLayout HorizontalOptions="Center" >
+                <ImageButton 
+                    BackgroundColor="Transparent"
+                    Source="{local:ImageResource button_B.png}"
+                    HorizontalOptions="Center"
+                    WidthRequest="130" 
+                    HeightRequest="130"
+                    VerticalOptions="CenterAndExpand"
+                    Clicked="OnImageButtonClicked"/>
+                   
+                
+                <Label Text="Product Name"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       FontSize="13"
+                       Margin="25, 50, 0 ,0"
+                       
+                />
+                <Image
+                    WidthRequest="50" 
+                    HeightRequest="50"
+                    Margin="50, 30, 0, 0"
+                    Source="{local:ImageResource blueCircle.png}"
+                       HorizontalOptions="Center"/>
+                
+                
+                
+            </RelativeLayout>
+            
+            
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>
