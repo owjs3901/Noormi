@@ -20,11 +20,20 @@ namespace Noormi
             
             var idx = FindByName("Index") as Label;
             var sz = FindByName("Size") as Label;
+            var button = FindByName("Button") as Label;
             
             SetArrow(index, size);
 
             idx.Text = (index + 1).ToString();
             sz.Text = size.ToString();
+            
+            button.GestureRecognizers.Add(new TapGestureRecognizer()
+            {
+                Command = new Command(() =>
+                {
+                    Console.WriteLine("TEST!!!");
+                })
+            });
             
             BindingContext = device;
         }

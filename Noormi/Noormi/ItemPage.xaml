@@ -60,37 +60,49 @@
                     Source="{local:ImageResource bottle.png}"/>
             </RelativeLayout>
             
-            <RelativeLayout HorizontalOptions="Center" >
+            <RelativeLayout
+                
+            >
                 <ImageButton 
                     BackgroundColor="Transparent"
                     Source="{local:ImageResource button_B.png}"
-                    HorizontalOptions="Center"
                     WidthRequest="130" 
                     HeightRequest="130"
-                    VerticalOptions="CenterAndExpand"
-                    Clicked="OnImageButtonClicked"/>
-                   
-                
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, Property=Height, Factor=0.5, Constant=-65}"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-65}"
+                    />
                 <Label Text="Product Name"
                        FontAttributes="Bold"
-                       HorizontalOptions="Center"
                        FontSize="13"
-                       Margin="25, 50, 0 ,0"
-                       
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"
+                       Padding="0, 0, 0, 30"
+                       WidthRequest="130" 
+                       HeightRequest="130"
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, Property=Height, Factor=0.5, Constant=-65}"
+                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-65}"
+                />
+                <Label Text="100%"
+                       x:Name="Button"
+                       FontAttributes="Bold"
+                       FontSize="30"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"
+                       Padding="0, 15, 0, 0"
+                       WidthRequest="130" 
+                       HeightRequest="130"
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, Property=Height, Factor=0.5, Constant=-65}"
+                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-65}"
                 />
                 <Image
-                    WidthRequest="50" 
-                    HeightRequest="50"
-                    Margin="50, 30, 0, 0"
+                    WidthRequest="12" 
+                    HeightRequest="12"
+                    Margin="0, 10, 0, 0"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, Property=Height, Factor=0.5, Constant=-6}"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-6}"
                     Source="{local:ImageResource blueCircle.png}"
                        HorizontalOptions="Center"/>
-                
-                
-                
             </RelativeLayout>
-            
-            
         </StackLayout>
-
     </ContentPage.Content>
 </ContentPage>
