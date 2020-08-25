@@ -49,13 +49,5 @@ namespace Noormi
                 left.Source = ImageSource.FromResource("Noormi.Images.enable.png");
                 
         }
-        
-        public void OnImageButtonClicked(object sender, EventArgs e)
-        {
-            var bottom = FindByName("Bottom") as ImageButton;
-            clickTotal += 1;
-            Console.WriteLine("clicked button");
-        }
-
     }
 }
