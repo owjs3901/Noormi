@@ -10,11 +10,13 @@ namespace Noormi
         public string RegisterDate { get; } // 등록 일자
         public string LastDate { get; } // 마지막 교체 일자
         public string PredictionDate { get; } // 예상 교체 주기
+        public string NumberOfUsers { get ; } //예상 사용 인원
 
-        public Device(string productName, string location)
+        public Device(string productName, string location, int battery)
         {
             ProductName = productName;
             Location = location;
+            Battery = battery;
         }
     }
 }

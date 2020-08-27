@@ -40,6 +40,8 @@
                                          VerticalOptions="Center"
                                          Margin="13, 0"
                                          Color="#BEBEBE"/>
+                                
+                                         
                                 <StackLayout>
                                     <Label Text="{Binding Location}"
                                            FontSize="16"

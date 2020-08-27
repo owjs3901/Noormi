@@ -44,6 +44,12 @@
       <EmbeddedResource Include="Images\disable.png" />
       <None Remove="Images\enable.png" />
       <EmbeddedResource Include="Images\enable.png" />
+      <None Remove="Images\Battery100.png" />
+      <EmbeddedResource Include="Images\Battery100.png" />
+      <None Remove="Images\Battery70.png" />
+      <EmbeddedResource Include="Images\Battery70.png" />
+      <None Remove="Images\Battery30.png" />
+      <EmbeddedResource Include="Images\Battery30.png" />
     </ItemGroup>
 
     <ItemGroup>

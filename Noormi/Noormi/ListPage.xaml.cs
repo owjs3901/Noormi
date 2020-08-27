@@ -20,8 +20,8 @@ namespace Noormi
             NavigationPage.SetHasNavigationBar(this, false);
             
             Devices = new List<Device>();
-            Devices.Add(new Device("PNAME", "LOC"));
-            Devices.Add(new Device("PNAME1", "LOC2"));
+            Devices.Add(new Device("PNAME", "LOC", 100));
+            Devices.Add(new Device("PNAME1", "LOC2", 30));
 
             BindingContext = this;
         }
@@ -29,7 +29,6 @@ namespace Noormi
         private void ItemList_OnItemTapped(object sender, ItemTappedEventArgs e)
         {
             Device device = Devices[e.ItemIndex];
-            
             Navigation.PushAsync(new ItemPage(device, e.ItemIndex, Devices.Count));
         }
     }
