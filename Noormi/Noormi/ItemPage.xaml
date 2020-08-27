@@ -17,36 +17,36 @@
                     Margin="56, 0, 0, 0"
                     WidthRequest="12"
                     HeightRequest="20"
-                    Source="{local:ImageResource disable.png}"/>
+                    Source="{local:ImageResource disable.png}" />
                 <StackLayout
                     HorizontalOptions="FillAndExpand">
                     <FlexLayout JustifyContent="Center" AlignContent="Center">
-                        <Image 
+                        <Image
                             x:Name="Battery"
                             Rotation="90"
                             HeightRequest="13"
                             WidthRequest="16"
-                            Source= "{local:ImageResource Battery100.png}"/>
-                        <Label 
+                            Source="{local:ImageResource Battery100.png}" />
+                        <Label
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
                             x:Name="Button1"
                             FontAttributes="Bold"
-                            FontSize="12"/>
+                            FontSize="12" />
                     </FlexLayout>
                     <Label
-                    HorizontalOptions="Center"
-                    Text="{Binding Location}"/>
+                        HorizontalOptions="Center"
+                        Text="{Binding Location}" />
                     <StackLayout
                         HorizontalOptions="Center"
                         Orientation="Horizontal">
-                        <Label x:Name="Index"/>
+                        <Label x:Name="Index" />
                         <BoxView HeightRequest="24"
                                  WidthRequest="1"
                                  VerticalOptions="Center"
                                  Margin="13, 0"
-                                 Color="#BEBEBE"/>
-                        <Label x:Name="Size"/>
+                                 Color="#BEBEBE" />
+                        <Label x:Name="Size" />
                     </StackLayout>
                 </StackLayout>
                 <ImageButton
@@ -57,74 +57,81 @@
                     WidthRequest="12"
                     HeightRequest="20"
                     ScaleX="-1"
-                    Source="{local:ImageResource disable.png}"
-                    />
+                    Source="{local:ImageResource disable.png}" />
             </StackLayout>
-            <RelativeLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Chocolate">
-                <Image
-                    BackgroundColor="Aqua"
-                    HorizontalOptions="Center"
-                    VerticalOptions="FillAndExpand"
-                    Source="{local:ImageResource bottle.png}"
-                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=0}"
-                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToView, Property=Height, Factor=1, Constant=0}"
-                    />
-                <StackLayout x:Name="DetailInfo" IsVisible="False" HorizontalOptions="FillAndExpand" BackgroundColor="Brown">
-                    <Label Text="등록일자" TextColor="#0B4BDB"/> 
-                    <Label Text="{Binding RegisterDate}"/>
-                    <BoxView HeightRequest="1" Color="#0B4BDB" 
-                             HorizontalOptions="FillAndExpand"
-                             VerticalOptions="FillAndExpand"/>
-                    <Label Text="마지막 교체일자"
-                           TextColor="#0B4BDB"/>
-                    <Label Text="{Binding LastDate}" />
-                    <BoxView HeightRequest="1" WidthRequest="100"  Color="#0B4BDB" />
-                    <Label Text="예상 교체 주기"
-                           TextColor="#0B4BDB"/>
-                    <Label Text="{Binding PredictionDate}"/>
-                    <BoxView HeightRequest="1" Color="#0B4BDB" />
-                    <Label Text="예상 사용 인원"
-                           TextColor="#0B4BDB"/>
-                    <Label Text="{Binding NumberOfUsers}"/>
-                </StackLayout>
-            </RelativeLayout>
-            <RelativeLayout>
-                <ImageButton 
+            <AbsoluteLayout
+                VerticalOptions="FillAndExpand"
+                BackgroundColor="Chocolate">
+                <FlexLayout
+                    BackgroundColor="RosyBrown"
+                    >
+                    <Image
+                        FlexLayout.Grow="1"
+                        BackgroundColor="Aqua"
+                        Source="{local:ImageResource bottle.png}" />
+                </FlexLayout>
+                <FlexLayout
+                    Direction="Column"
+                    >
+                    <StackLayout x:Name="DetailInfo" 
+                                 IsVisible="False"
+                                 BackgroundColor="Brown">
+                        <Label Text="등록일자" TextColor="#0B4BDB" />
+                        <Label Text="{Binding RegisterDate}" />
+                        <BoxView HeightRequest="1" Color="#0B4BDB" />
+                        <Label Text="마지막 교체일자"
+                               TextColor="#0B4BDB" />
+                        <Label Text="{Binding LastDate}" />
+                        <BoxView HeightRequest="1" Color="#0B4BDB" />
+                        <Label Text="예상 교체 주기"
+                               TextColor="#0B4BDB" />
+                        <Label Text="{Binding PredictionDate}" />
+                        <BoxView HeightRequest="1" Color="#0B4BDB" />
+                        <Label Text="예상 사용 인원"
+                               TextColor="#0B4BDB" />
+                        <Label Text="{Binding NumberOfUsers}" />
+                    </StackLayout>
+                </FlexLayout>
+            </AbsoluteLayout>
+            <RelativeLayout
+                VerticalOptions="Center"
+                BackgroundColor="Black">
+                <ImageButton
                     BackgroundColor="Transparent"
                     Source="{local:ImageResource button_B.png}"
-                    WidthRequest="130" 
+                    WidthRequest="130"
                     HeightRequest="130"
                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, Property=Height, Factor=0.5, Constant=-65}"
-                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-65}"/>
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-65}" />
                 <Label Text="{Binding ProductName}"
                        FontAttributes="Bold"
                        FontSize="13"
                        VerticalTextAlignment="Center"
                        HorizontalTextAlignment="Center"
                        Padding="0, 0, 0, 30"
-                       WidthRequest="130" 
+                       WidthRequest="130"
                        HeightRequest="130"
                        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, Property=Height, Factor=0.5, Constant=-65}"
-                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-65}"/>
-                <Label 
-                       x:Name="Button"
-                       FontAttributes="Bold"
-                       FontSize="30"
-                       VerticalTextAlignment="Center"
-                       HorizontalTextAlignment="Center"
-                       Padding="0, 15, 0, 0"
-                       WidthRequest="130" 
-                       HeightRequest="130"
-                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, Property=Height, Factor=0.5, Constant=-65}"
-                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-65}"/>
+                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-65}" />
+                <Label
+                    x:Name="Button"
+                    FontAttributes="Bold"
+                    FontSize="30"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+                    Padding="0, 15, 0, 0"
+                    WidthRequest="130"
+                    HeightRequest="130"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, Property=Height, Factor=0.5, Constant=-65}"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-65}" />
                 <Image
-                    WidthRequest="12" 
+                    WidthRequest="12"
                     HeightRequest="12"
                     Margin="0, 10, 0, 0"
                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, Property=Height, Factor=0.5, Constant=-6}"
                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-6}"
                     Source="{local:ImageResource blueCircle.png}"
-                    HorizontalOptions="Center"/>
+                    HorizontalOptions="Center" />
             </RelativeLayout>
         </StackLayout>
     </ContentPage.Content>
