@@ -20,8 +20,10 @@ namespace Noormi
             NavigationPage.SetHasNavigationBar(this, false);
             
             Devices = new List<Device>();
-            Devices.Add(new Device("PNAME", "LOC", 100));
-            Devices.Add(new Device("PNAME1", "LOC2", 30));
+            Devices.Add(new Device("PNAME", "LOC", 56, 
+                "2020.08.27", "2020.08.26", "D-1", "30명"));
+            Devices.Add(new Device("PNAME1", "LOC2", 100,
+                "2020.08.27", "2020.08.26", "D-1", "100명"));
 
             BindingContext = this;
         }

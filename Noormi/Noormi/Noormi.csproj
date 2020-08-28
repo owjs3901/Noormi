@@ -50,6 +50,8 @@
       <EmbeddedResource Include="Images\Battery70.png" />
       <None Remove="Images\Battery30.png" />
       <EmbeddedResource Include="Images\Battery30.png" />
+      <None Remove="Images\Battery0.png" />
+      <EmbeddedResource Include="Images\Battery0.png" />
     </ItemGroup>
 
     <ItemGroup>
