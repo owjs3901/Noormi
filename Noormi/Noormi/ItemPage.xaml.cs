@@ -30,8 +30,6 @@ namespace Noormi
             _detailInfo = FindByName("DetailInfo") as StackLayout;
             button.Text = device.Battery + "%";
 
-            Boolean b = base.OnBackButtonPressed();
-
             SetArrow(index, size);
             Charge(device.Battery, device);
 
@@ -43,16 +41,7 @@ namespace Noormi
                 Command = new Command(() =>
                 {
                     Console.WriteLine("TEST!!!");
-
-                    if (!_detailInfo.IsVisible)
-                    {
-                        _detailInfo.IsVisible = true;
-                    }
-
-                    else
-                    {
-                        _detailInfo.IsVisible = false;
-                    }
+                    _detailInfo.IsVisible = !_detailInfo.IsVisible;
                 })
             });
             OnBackButtonPressed();
@@ -77,7 +66,7 @@ namespace Noormi
                 _detailInfo.IsVisible = false;
                 return true;
             }
-
+            
             else return base.OnBackButtonPressed();
         }
 
