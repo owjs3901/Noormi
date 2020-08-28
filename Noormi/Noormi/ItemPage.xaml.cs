@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,6 +11,8 @@ namespace Noormi
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ItemPage : ContentPage
     {
+        private StackLayout _detailInfo;
+
         public ItemPage(Device device, int index, int size)
         {
             InitializeComponent();
@@ -20,14 +21,17 @@ namespace Noormi
             var idx = FindByName("Index") as Label;
             var sz = FindByName("Size") as Label;
             var button = FindByName("Button") as Label;
-            var restDate = FindByName("ResisterDate") as Label; 
-            var lastDate = FindByName("LastDate") as Label; 
-            var preDate = FindByName("PredictionDate") as Label; 
+            var restDate = FindByName("ResisterDate") as Label;
+            var lastDate = FindByName("LastDate") as Label;
+            var preDate = FindByName("PredictionDate") as Label;
             var numOfUsers = FindByName("NumberOfUsers") as Label;
-            var detailInfo = FindByName("DetailInfo") as StackLayout;
-            
+            //var detailInfo = FindByName("DetailInfo") as StackLayout;
+
+            _detailInfo = FindByName("DetailInfo") as StackLayout;
             button.Text = device.Battery + "%";
-            
+
+            Boolean b = base.OnBackButtonPressed();
+
             SetArrow(index, size);
             Charge(device.Battery, device);
 
@@ -40,12 +44,18 @@ namespace Noormi
                 {
                     Console.WriteLine("TEST!!!");
 
-                    if (!detailInfo.IsVisible)
-                        detailInfo.IsVisible = true;
+                    if (!_detailInfo.IsVisible)
+                    {
+                        _detailInfo.IsVisible = true;
+                    }
+
                     else
-                        detailInfo.IsVisible = false;
+                    {
+                        _detailInfo.IsVisible = false;
+                    }
                 })
             });
+            OnBackButtonPressed();
             BindingContext = device;
         }
 
@@ -53,12 +63,22 @@ namespace Noormi
         {
             var left = FindByName("Left") as ImageButton;
             var right = FindByName("Right") as ImageButton;
-            
-            if(index + 1 != size)
+
+            if (index + 1 != size)
                 right.Source = ImageSource.FromResource("Noormi.Images.enable.png");
-            if(index != 0)
+            if (index != 0)
                 left.Source = ImageSource.FromResource("Noormi.Images.enable.png");
-                
+        }
+
+        protected override bool OnBackButtonPressed()
+        {
+            if (_detailInfo.IsVisible == true)
+            {
+                _detailInfo.IsVisible = false;
+                return true;
+            }
+
+            else return base.OnBackButtonPressed();
         }
 
         private void Charge(int persentage, Device device)
@@ -72,23 +92,21 @@ namespace Noormi
                 battery.Source = ImageSource.FromResource("Noormi.Images.Battery100.png");
                 button1.TextColor = Color.FromHex("#0B4BDB");
             }
+
             if (persentage <= 70 & persentage > 30)
             {
                 battery.Source = ImageSource.FromResource("Noormi.Images.Battery70.png");
                 button1.TextColor = Color.FromHex("#DB830B");
-
             }
+
             if (persentage <= 30 & persentage > 0)
             {
                 battery.Source = ImageSource.FromResource("Noormi.Images.Battery30.png");
                 button1.TextColor = Color.FromHex("#DB0B0B");
             }
+
             if (persentage == 0)
                 battery.Source = ImageSource.FromResource("Noormi.Images.Battery0.png");
-            
-                
-            
         }
-
     }
 }

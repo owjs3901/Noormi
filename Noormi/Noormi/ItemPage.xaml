@@ -25,21 +25,19 @@
                             x:Name="Battery"
                             Rotation="90"
                             HeightRequest="10"
-                            WidthRequest="16"
-                            />
+                            WidthRequest="16" />
                         <Label
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
                             x:Name="Button1"
                             FontAttributes="Bold"
                             FontSize="12"
-                            Margin="0, 0, 0, 5"
-                            />
+                            Margin="0, 0, 0, 5" />
                     </FlexLayout>
                     <Label
                         HorizontalOptions="Center"
                         Text="{Binding Location}"
-                        FontAttributes="Bold"/>
+                        FontAttributes="Bold" />
                     <StackLayout
                         HorizontalOptions="Center"
                         Orientation="Horizontal">
@@ -63,68 +61,63 @@
                     Source="{local:ImageResource disable.png}" />
             </StackLayout>
             <AbsoluteLayout
-                VerticalOptions="FillAndExpand"
-                >
+                VerticalOptions="FillAndExpand">
                 <FlexLayout>
                     <Image
                         FlexLayout.Grow="1"
                         Source="{local:ImageResource bottle.png}" />
                 </FlexLayout>
                 <FlexLayout
-                    Direction="Column"
-                    >
-                    <StackLayout x:Name="DetailInfo" 
+                    Direction="Column">
+                    <StackLayout x:Name="DetailInfo"
                                  IsVisible="False"
-                                 Margin="0,40,0,0"
-                                 
-                    >
-                        <Label Text="등록일자" 
-                               TextColor="#0B4BDB" 
+                                 Margin="0,40,0,0">
+                        <Label Text="등록일자"
+                               TextColor="#0B4BDB"
                                FontSize="15"
                                FontAttributes="Bold"
-                               Margin="35,0,0,0"/>
-                        <Label Text="{Binding RegisterDate}" 
+                               Margin="35,0,0,0" />
+                        <Label Text="{Binding RegisterDate}"
                                FontSize="15"
                                FontAttributes="Bold"
                                Margin="35,0,0,10"
-                               TextColor="#707070"/>
-                        <BoxView HeightRequest="1" 
+                               TextColor="#707070" />
+                        <BoxView HeightRequest="1"
                                  Color="#0B4BDB" />
                         <Label Text="마지막 교체일자"
                                TextColor="#0B4BDB"
                                FontSize="15"
                                FontAttributes="Bold"
-                               Margin="35,10,0,0"/>
+                               Margin="35,10,0,0" />
                         <Label Text="{Binding LastDate}"
                                FontSize="15"
                                FontAttributes="Bold"
                                Margin="35,0,0,10"
-                               TextColor="#707070"/>
-                        <BoxView HeightRequest="1" 
+                               TextColor="#707070" />
+                        <BoxView HeightRequest="1"
                                  Color="#0B4BDB" />
                         <Label Text="예상 교체 주기"
-                               TextColor="#0B4BDB" 
+                               TextColor="#0B4BDB"
                                FontSize="15"
                                FontAttributes="Bold"
-                               Margin="35,10,0,0"/>
+                               Margin="35,10,0,0" />
                         <Label Text="{Binding PredictionDate}"
                                FontSize="15"
                                FontAttributes="Bold"
                                Margin="35,0,0,10"
-                               TextColor="#707070"/>
+                               TextColor="#707070" />
                         <BoxView HeightRequest="1"
-                                 Color="#0B4BDB" 
-                                 />
+                                 Color="#0B4BDB" />
                         <Label Text="예상 사용 인원"
                                TextColor="#0B4BDB"
                                FontSize="15"
                                FontAttributes="Bold"
-                               Margin="35,10,0,0"/>
+                               Margin="35,10,0,0" />
                         <Label Text="{Binding NumberOfUsers}"
                                FontSize="15"
                                FontAttributes="Bold"
                                Margin="35,0,0,10"
-                               TextColor="#707070"/>
+                               TextColor="#707070" />
                     </StackLayout>
                 </FlexLayout>
             </AbsoluteLayout>
