@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -17,4 +17,4 @@ namespace Noormi.iOS
             UIApplication.Main(args, null, "AppDelegate");
         }
     }
-}
+}*/

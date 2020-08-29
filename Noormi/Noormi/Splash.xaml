@@ -5,27 +5,21 @@
              xmlns:local="clr-namespace:Noormi;assembly=Noormi"
              x:Class="Noormi.Splash">
     <ContentPage.Content>
-        <RelativeLayout BackgroundColor="{StaticResource MainColor}" >
-           
+        <FlexLayout
+            BackgroundColor="{StaticResource MainColor}"
+            JustifyContent="Center"
+            AlignItems="Center"
+            >
             <StackLayout
-                WidthRequest="300"
-                HeightRequest="300"
-
-                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.5, Constant=-150}"
-                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-150}"
-                AnchorX="50">
-                
+                Margin="0, 0, 0, 35">
                 <Image WidthRequest="90" HeightRequest="90" HorizontalOptions="Center"
                        Source="{local:ImageResource icon.png}" />
-                
                 <Label Text="누르미"
                        HorizontalOptions="Center"
                        FontSize="32"
                        TextColor="White" 
                 />
-
-                
             </StackLayout>
-        </RelativeLayout>
+        </FlexLayout>
     </ContentPage.Content>
 </ContentPage>
