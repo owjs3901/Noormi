@@ -11,9 +11,8 @@ namespace Noormi
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ItemPage : ContentPage
     {
-        
         private StackLayout _detailInfo;
-        
+
 
         public ItemPage(Device device, int index, int size)
         {
@@ -29,8 +28,8 @@ namespace Noormi
             var numOfUsers = FindByName("NumberOfUsers") as Label;
             _detailInfo = FindByName("DetailInfo") as StackLayout;
             button.Text = device.Battery + "%";
-            
-            
+
+
             SetArrow(index, size);
             Charge(device.Battery, device);
             BottleAni();
@@ -38,8 +37,8 @@ namespace Noormi
 
             idx.Text = (index + 1).ToString();
             sz.Text = size.ToString();
-            
-            
+
+
             button.GestureRecognizers.Add(new TapGestureRecognizer()
             {
                 Command = new Command(() =>
@@ -59,10 +58,9 @@ namespace Noormi
             {
                 await bottle.RotateTo(20, 4000);
                 await bottle.RotateTo(-10, 4000);
-
             }
         }
-        
+
         private void SetArrow(int index, int size)
         {
             var left = FindByName("Left") as ImageButton;
@@ -81,7 +79,7 @@ namespace Noormi
                 _detailInfo.IsVisible = false;
                 return true;
             }
-            
+
             else return base.OnBackButtonPressed();
         }
 
