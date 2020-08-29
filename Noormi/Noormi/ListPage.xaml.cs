@@ -35,8 +35,10 @@ namespace Noormi
             
             if (Devices.Count == 0)
             {
-                Devices.Add(new Device("PNAME", "LOC"));
-                Devices.Add(new Device("PNAME1", "LOC2"));
+                Devices.Add(new Device("PNAME", "LOC", 75,
+                    "2020.02.30", "2020.02.30","D-20","2020.02.30"));
+                Devices.Add(new Device("PNAME1", "LOC2", 100,
+                    "2020.02.30", "2020.02.30","D-20","2020.02.30"));
             }
 
             BindingContext = this;

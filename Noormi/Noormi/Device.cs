@@ -17,11 +17,18 @@ namespace Noormi
         public string LastDate { get; } // 마지막 교체 일자
         [JsonProperty("predictionDate")]
         public string PredictionDate { get; } // 예상 교체 주기
+        public string NumberOfUsers { get ; } //예상 사용 인원
 
-        public Device(string productName, string location)
+        public Device(string productName, string location, int battery, string registerDate, string lastDate, string predictionDate, string numberOfUsers)
         {
             ProductName = productName;
             Location = location;
+            Battery = battery;
+            RegisterDate = registerDate;
+            LastDate = lastDate;
+            PredictionDate = predictionDate;
+            NumberOfUsers = numberOfUsers;
+
         }
     }
 }
