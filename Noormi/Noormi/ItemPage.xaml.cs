@@ -56,8 +56,8 @@ namespace Noormi
             var bottle = FindByName("Bottle") as Image;
             while (true)
             {
-                await bottle.RotateTo(20, 4000);
-                await bottle.RotateTo(-10, 4000);
+                await bottle.RotateTo(15, 1500, Easing.SinIn);
+                await bottle.RotateTo(-5, 1500);
             }
         }
 
