@@ -64,8 +64,9 @@
                 VerticalOptions="FillAndExpand">
                 <FlexLayout>
                     <Image
+                        x:Name="Bottle"
                         FlexLayout.Grow="1"
-                        Source="{local:ImageResource bottle.png}" />
+                        Source="{ local:ImageResource bottle.png}" />
                 </FlexLayout>
                 <FlexLayout
                     Direction="Column">
