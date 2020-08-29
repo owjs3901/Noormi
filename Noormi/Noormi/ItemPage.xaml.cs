@@ -58,7 +58,7 @@ namespace Noormi
             while (true)
             {
                 await bottle.RotateTo(20, 4000);
-                await bottle.RotateTo(-20, 4000);
+                await bottle.RotateTo(-10, 4000);
 
             }
         }
