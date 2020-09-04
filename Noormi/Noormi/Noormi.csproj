@@ -10,7 +10,9 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Font" Version="0.3.0.3" />
         <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+        <PackageReference Include="SkiaSharp" Version="2.80.2-preview.33" />
         <PackageReference Include="Xamarin.Forms" Version="4.4.0.991640" />
     </ItemGroup>
 
@@ -53,6 +55,8 @@
       <EmbeddedResource Include="Images\Battery30.png" />
       <None Remove="Images\Battery0.png" />
       <EmbeddedResource Include="Images\Battery0.png" />
+      <None Remove="Images\bottleBlur.png" />
+      <EmbeddedResource Include="Images\bottleBlur.png" />
     </ItemGroup>
 
     <ItemGroup>

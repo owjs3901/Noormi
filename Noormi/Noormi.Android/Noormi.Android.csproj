@@ -46,6 +46,8 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <PackageReference Include="Font" Version="0.3.0.3" />
+        <PackageReference Include="SkiaSharp" Version="2.80.2-preview.33" />
         <PackageReference Include="Xamarin.Forms" Version="4.4.0.991640" />
         <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.3" />
         <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.3" />

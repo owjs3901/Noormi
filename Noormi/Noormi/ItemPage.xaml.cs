@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SkiaSharp;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace Noormi
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
+    
     public partial class ItemPage : ContentPage
     {
         private StackLayout _detailInfo;
@@ -26,14 +28,14 @@ namespace Noormi
             var lastDate = FindByName("LastDate") as Label;
             var preDate = FindByName("PredictionDate") as Label;
             var numOfUsers = FindByName("NumberOfUsers") as Label;
+            var bottleBlur = FindByName("Bottle") as Image;
             _detailInfo = FindByName("DetailInfo") as StackLayout;
+       
             button.Text = device.Battery + "%";
-
 
             SetArrow(index, size);
             Charge(device.Battery, device);
             BottleAni();
-
 
             idx.Text = (index + 1).ToString();
             sz.Text = size.ToString();
@@ -44,12 +46,19 @@ namespace Noormi
                 Command = new Command(() =>
                 {
                     Console.WriteLine("TEST!!!");
+                    
                     _detailInfo.IsVisible = !_detailInfo.IsVisible;
+                    
                 })
             });
             OnBackButtonPressed();
             BindingContext = device;
         }
+        // public SkiaSharp.SKImageFilter CreateBlur (float sigmaX, float sigmaY,
+        //     SKImageFilter input = null,
+        //     SKImageFilter.CropRect cropRect = null);
+        // public abstract SkiaSharp.SKMaskFilter CreateBlur (SkiaSharp.SKBlurStyle blurStyle, float sigma,
+        //     SkiaSharp.SKRect occluder, SkiaSharp.SKBlurMaskFilterFlags flags);
 
         private async void BottleAni()
         {

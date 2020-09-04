@@ -20,6 +20,9 @@
                        HorizontalOptions="CenterAndExpand" />
             </StackLayout>
             <ListView x:Name="ItemList" ItemsSource="{Binding Devices}"
+                      IsPullToRefreshEnabled="true"
+                      IsRefreshing="{Binding IsRefreshing}"
+                      RefreshCommand="{Binding RefreshCommand}"
                       RowHeight="94"
                       SeparatorVisibility="Default"
                       SeparatorColor="{StaticResource MainColor}"
