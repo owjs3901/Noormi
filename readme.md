@@ -40,6 +40,9 @@ Graphic Design
 ## 구상 이미지
 ![Alt text](/img/3d.gif)  
 
+## 앱 구현
+![Alt text](/img/app.gif)  
+
 ## 아키텍처
 ![Alt text](/img/아키텍처.png) 
 
