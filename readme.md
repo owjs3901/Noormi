@@ -3,16 +3,17 @@
 Xamarin + Tizen
 
 ## 구성원
-- [오정민](https://github.com/owjs3901)
-  회로도 제작
+- **[오정민](https://github.com/owjs3901)(팀장 - HW/SW 개발자)**
+- 회로도 제작
   
-- 소호정
+- **소호정(팀원 - SW 개발자)**
 
-- 김희연
-  하드웨어 구상 및 제작.
-  Pheripheral GPIO를 활용한 하드웨어 제어코드 작성
+- **김희연(팀원 - HW 개발자)**
+- RPI4 Tizen 환경설정
+- 하드웨어 설계 및 제작.
+- Pheripheral GPIO를 활용한 하드웨어 제어코드 작성
   
-- 이지헌
+- **이지헌(팀원 - 디자이너)**
 
 ## 개요
 코로나로 인한 언택트 시대, 불가피한 접촉에서의 감염을 막기위해 주변 곳곳에 손 소독제가 배치되고 있습니다.
@@ -32,10 +33,12 @@ Xamarin + Tizen
 * Service/src/network.h 오정민
 
 ## 보드
-* RPI4 : 거리감지센서, 헬리컬기어 펌프모터 연동, https://github.com/owjs3901/Noormi/Service
+* RPI4 : 거리감지 센서, 헬리컬기어 펌프모터 연동, https://github.com/owjs3901/Noormi/Service
 
 ## 회로도
 <img src="/img/회로도.png">
+- GPIO 18 : 거리감지 센서
+- GPIO 24 : 헬리컬기어 펌프모터 // V2(12V) 외부전력과 연결
 
 ## 구현사항
 * Peripheral GPIO
