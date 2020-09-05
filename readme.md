@@ -1,5 +1,5 @@
 # 누르미
-![Alt text](/img/logo.svg)    
+<img src="/img/logo.svg" width="50%" height="50%">
 2020 하드웨어 해커톤
 Xamarin + Tizen
 
