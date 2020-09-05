@@ -11,7 +11,7 @@
 회로도 제작 및 설계  
 서버 개발 및 설계  
 안드로이드 앱 개발 - 로직 및 네트워킹  
-타이젠 펌웨어 개발 - 네트워킹
+타이젠 펌웨어 개발 - 네트워킹   
 readme 작성
 
 - **소호정(팀원 - SW 개발자)**
@@ -20,7 +20,8 @@ readme 작성
 - **김희연(팀원 - HW/SW 개발자)**
 > RPI4 Tizen 환경설정  
 하드웨어 설계 및 제작  
-타이젠 펌웨어 개발 - Pheripheral GPIO를 활용한 하드웨어 제어코드 작성
+타이젠 펌웨어 개발 - Pheripheral GPIO를 활용한 하드웨어 제어코드 작성   
+영상 편집   
 readme 작성
   
 - **이지헌(팀원 - 디자이너)**
@@ -41,7 +42,7 @@ Graphic Design
 ![Alt text](/img/3d.gif)  
 
 ## 앱 구현
-![Alt text](/img/app.gif)  
+![Alt text](/app.gif)  
 
 ## 아키텍처
 ![Alt text](/img/아키텍처.png) 
