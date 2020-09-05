@@ -47,6 +47,9 @@ Embedded/src/network.h
 > Noormi/Noormi/MainPage.xaml(.cs)  
 > Noormi/Noormi/Splash.xaml(.cs)  
 
+* 임베디드
+> server/src/*   
+
 ## 코드 기여자
 **김희연**
 > Embedded/src/controller.c timer_cb   
@@ -59,7 +62,9 @@ Embedded/src/controller.c service_app_create
 > Noormi/Noormi/App.xaml(.cs)  
 > Noormi/Noormi/Device.cs  
 > Noormi/Noormi/ItemPage.xaml(.cs)  
-> Noormi/Noormi/ListPage.xaml(.cs)
+> Noormi/Noormi/ListPage.xaml(.cs)  
+> server/src/*   
+
 
 **소호정**
 > Noormi/Noormi/ItemPage.xaml(.cs)  
