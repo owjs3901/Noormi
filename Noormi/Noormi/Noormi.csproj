@@ -57,6 +57,14 @@
       <EmbeddedResource Include="Images\Battery0.png" />
       <None Remove="Images\bottleBlur.png" />
       <EmbeddedResource Include="Images\bottleBlur.png" />
+      <None Remove="Images\Charge100.png" />
+      <EmbeddedResource Include="Images\Charge100.png" />
+      <None Remove="Images\Charge30.png" />
+      <EmbeddedResource Include="Images\Charge30.png" />
+      <None Remove="Images\Charge70.png" />
+      <EmbeddedResource Include="Images\Charge70.png" />
+      <None Remove="Images\Charge0.png" />
+      <EmbeddedResource Include="Images\Charge0.png" />
     </ItemGroup>
 
     <ItemGroup>

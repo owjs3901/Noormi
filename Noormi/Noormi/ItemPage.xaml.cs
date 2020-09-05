@@ -9,12 +9,17 @@ using Xamarin.Forms.Xaml;
 
 namespace Noormi
 {
+    /**
+     * 아이템 페이지 컨트롤 클래스
+     */
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    
     public partial class ItemPage : ContentPage
     {
+        // 세부정보 레이아웃
         private StackLayout _detailInfo;
 
+        // 백그라운드 이미지
+        private Image _bottleBlur;
 
         public ItemPage(Device device, int index, int size)
         {
@@ -28,9 +33,9 @@ namespace Noormi
             var lastDate = FindByName("LastDate") as Label;
             var preDate = FindByName("PredictionDate") as Label;
             var numOfUsers = FindByName("NumberOfUsers") as Label;
-            var bottleBlur = FindByName("Bottle") as Image;
+            _bottleBlur = FindByName("Bottle") as Image;
             _detailInfo = FindByName("DetailInfo") as StackLayout;
-       
+
             button.Text = device.Battery + "%";
 
             SetArrow(index, size);
@@ -43,23 +48,24 @@ namespace Noormi
 
             button.GestureRecognizers.Add(new TapGestureRecognizer()
             {
+                /*
+                 * 버튼 클릭 이벤트를 통하여 배경을 치환해 줌과 함께 세부 정보 레이아웃을 나타냄
+                 */
                 Command = new Command(() =>
                 {
-                    Console.WriteLine("TEST!!!");
-                    
                     _detailInfo.IsVisible = !_detailInfo.IsVisible;
-                    
+                    _bottleBlur.Source = ImageSource.FromResource(_detailInfo.IsVisible
+                        ? "Noormi.Images.bottleBlur.png"
+                        : "Noormi.Images.bottle.png");
                 })
             });
             OnBackButtonPressed();
             BindingContext = device;
         }
-        // public SkiaSharp.SKImageFilter CreateBlur (float sigmaX, float sigmaY,
-        //     SKImageFilter input = null,
-        //     SKImageFilter.CropRect cropRect = null);
-        // public abstract SkiaSharp.SKMaskFilter CreateBlur (SkiaSharp.SKBlurStyle blurStyle, float sigma,
-        //     SkiaSharp.SKRect occluder, SkiaSharp.SKBlurMaskFilterFlags flags);
 
+        /*
+         * 배경 병 애니메이션
+         */
         private async void BottleAni()
         {
             var bottle = FindByName("Bottle") as Image;
@@ -70,6 +76,9 @@ namespace Noormi
             }
         }
 
+        /*
+         * 다음 혹은 이전 디바이스를 나타냄
+         */
         private void SetArrow(int index, int size)
         {
             var left = FindByName("Left") as ImageButton;
@@ -81,18 +90,27 @@ namespace Noormi
                 left.Source = ImageSource.FromResource("Noormi.Images.enable.png");
         }
 
+        /*
+         * 뒤로가기 버튼을 눌렀을때 이벤트
+         * 세부정보가 보일때는 숨김
+         * 그 외에는 뒤로가기
+         */
         protected override bool OnBackButtonPressed()
         {
-            if (_detailInfo.IsVisible == true)
+            if (_detailInfo.IsVisible)
             {
                 _detailInfo.IsVisible = false;
+                _bottleBlur.Source = ImageSource.FromResource("Noormi.Images.bottle.png");
                 return true;
             }
 
-            else return base.OnBackButtonPressed();
+            return base.OnBackButtonPressed();
         }
 
-        private void Charge(int persentage, Device device)
+        /* Charge
+         * ItemList 상단에 있는 배터리 아이콘과 텍스트 상황에 맞게 나타냄
+         */
+        protected void Charge(int persentage, Device device)
         {
             var battery = FindByName("Battery") as Image;
             var button1 = FindByName("Button1") as Label; //위에 있는 배터리

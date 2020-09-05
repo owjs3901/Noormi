@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:local="clr-namespace:Noormi;assembly=Noormi"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Noormi.ListPage">
     <ContentPage.Content>
@@ -27,35 +28,46 @@
                       SeparatorVisibility="Default"
                       SeparatorColor="{StaticResource MainColor}"
                       SelectionMode="None"
-                      ItemTapped="ItemList_OnItemTapped"
-            >
+                      ItemTapped="ItemList_OnItemTapped">
                 <ListView.ItemTemplate>
-                    <DataTemplate>
+                    <DataTemplate x:Key="battery">
                         <ViewCell Height="94">
                             <StackLayout Orientation="Horizontal"
                                          Padding="25">
                                 <Label Text="01"
+                                       x:Name="cell_index"
                                        FontSize="32"
-                                       TextColor="{StaticResource MainColor}"
-                                       />
+                                       TextColor="{StaticResource MainColor}" />
                                 <BoxView HeightRequest="24"
                                          WidthRequest="1"
                                          VerticalOptions="Center"
                                          Margin="13, 0"
-                                         Color="#BEBEBE"/>
-                                
-                                         
+                                         Color="#BEBEBE" />
+
                                 <StackLayout>
                                     <Label Text="{Binding Location}"
                                            FontSize="16"
                                            FontAttributes="Bold"
-                                           TextColor="{StaticResource MainColor}"
-                                    />
+                                           TextColor="{StaticResource MainColor}" />
+
+
                                     <Label Text="{Binding ProductName}"
                                            FontSize="16"
                                            FontAttributes="Bold"
-                                           TextColor="#707070"
-                                    />
+                                           TextColor="#707070" />
+                                </StackLayout>
+                                <StackLayout HorizontalOptions="EndAndExpand"
+                                             VerticalOptions="CenterAndExpand"
+                                             Orientation="Horizontal">
+                                    <Image
+                                        x:Name="battery"
+                                        Source="{local:ImageResource Charge100.png}"
+                                        HeightRequest="10"
+                                        WidthRequest="16" />
+                                    <Label
+                                        x:Name="battery_text"
+                                        Text="{Binding Battery}"
+                                        FontAttributes="Bold" />
                                 </StackLayout>
                             </StackLayout>
                         </ViewCell>

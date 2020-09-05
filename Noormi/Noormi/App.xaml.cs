@@ -12,6 +12,9 @@ namespace Noormi
         {
             InitializeComponent();
 
+            /*
+             * 스플레쉬 페이지에서 앱 실행
+             */
             MainPage = new Splash();
         }
 

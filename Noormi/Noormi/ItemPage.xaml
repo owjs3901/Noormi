@@ -24,8 +24,7 @@
                     <FlexLayout JustifyContent="Center" AlignContent="Center">
                         <Image
                             x:Name="Battery"
-                            Rotation="90"
-                            HeightRequest="10"
+                            HeightRequest="14"
                             WidthRequest="16" />
                         <Label
                             HorizontalOptions="Center"
@@ -61,16 +60,16 @@
                     ScaleX="-1"
                     Source="{local:ImageResource disable.png}" />
             </StackLayout>
-            
+
             <AbsoluteLayout
                 VerticalOptions="FillAndExpand">
                 <FlexLayout>
-                    
+
                     <Image
                         x:Name="Bottle"
                         FlexLayout.Grow="1"
                         Source="{ local:ImageResource bottle.png}" />
-                    
+
                 </FlexLayout>
                 <FlexLayout
                     Direction="Column">
@@ -113,7 +112,7 @@
                                TextColor="#707070" />
                         <BoxView HeightRequest="1"
                                  Color="#0B4BDB" />
-                        <Label Text="예상 사용 인원"
+                        <Label Text="현재 사용 횟수"
                                TextColor="#0B4BDB"
                                FontSize="15"
                                FontAttributes="Bold"

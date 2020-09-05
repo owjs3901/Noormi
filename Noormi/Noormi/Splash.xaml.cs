@@ -16,6 +16,9 @@ namespace Noormi
         public Splash()
         {
             InitializeComponent();
+            /*
+             * 3초 후에 ListPage로 이동함
+             */
             Task.Delay(3000)
                 .ContinueWith(t =>
                     Xamarin.Forms.Device.BeginInvokeOnMainThread(() =>
@@ -23,6 +26,5 @@ namespace Noormi
                     )
                 );
         }
-
     }
 }

@@ -8,8 +8,7 @@
         <FlexLayout
             BackgroundColor="{StaticResource MainColor}"
             JustifyContent="Center"
-            AlignItems="Center"
-            >
+            AlignItems="Center">
             <StackLayout
                 Margin="0, 0, 0, 35">
                 <Image WidthRequest="90" HeightRequest="90" HorizontalOptions="Center"
@@ -17,8 +16,7 @@
                 <Label Text="누르미"
                        HorizontalOptions="Center"
                        FontSize="32"
-                       TextColor="White" 
-                />
+                       TextColor="White" />
             </StackLayout>
         </FlexLayout>
     </ContentPage.Content>
