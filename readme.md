@@ -32,9 +32,13 @@ Embedded/src/network.h
 >   
 
 ## 코드 기여자
-* Embedded/src/controller.c timer_cb 김희연
-* Embedded/src/network.c 오정민
-* Embedded/src/network.h 오정민
+**김희연**
+> Embedded/src/controller.c timer_cb   
+Embedded/src/controller.c motion_interrupted_cb   
+Embedded/src/controller.c service_app_create   
+**오정민**
+> Embedded/src/network.c   
+Embedded/src/network.h   
 
 ## 보드
 * RPI4 : 거리감지 센서, 헬리컬기어 펌프모터 연동, https://github.com/owjs3901/Noormi/Service
