@@ -41,8 +41,8 @@ Service/src/network.h
 
 ## 회로도
 <img src="/img/회로도.png">
-- GPIO 18 : 거리감지 센서
-- GPIO 24 : 헬리컬기어 펌프모터 // V2(12V) 외부전력과 연결
+> GPIO 18 : 거리감지 센서   
+GPIO 24 : 헬리컬기어 펌프모터 // V2(12V) 외부전력과 연결   
 
 ## 구현사항
 * Peripheral GPIO
