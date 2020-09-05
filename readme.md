@@ -33,46 +33,69 @@ Graphic Design
 ![Alt text](/img/3d.gif)     
 
 ## 파일 리스트
-* 임베디드
-> Embedded/src/controller.c   
-Embedded/src/network.c   
-Embedded/src/network.h   
+PIN NUM | 설명 |
+---- | :----: |
+GPIO 18 | 거리감지 센서
+GPIO 24 | 헬리컬기어 펌프모터 컨트롤
 
-* 어플리케이션
-> Noormi/Noormi/App.xaml(.cs)  
-> Noormi/Noormi/Device.cs  
-> Noormi/Noormi/ItemPage.xaml(.cs)  
-> Noormi/Noormi/ListPage.xaml(.cs)  
-> Noormi/Noormi/MainPage.xaml(.cs)  
-> Noormi/Noormi/Splash.xaml(.cs)  
+## 임베디드
 
-* 임베디드
-> server/src/*   
+파일명 |
+:---- |
+Embedded/src/controller.c   |
+Embedded/src/network.c   |
+Embedded/src/network.h   |
+
+## 어플리케이션
+
+파일명 |
+:---- |
+Noormi/Noormi/App.xaml(.cs)|  
+Noormi/Noormi/Device.cs  |
+Noormi/Noormi/ItemPage.xaml(.cs)|  
+Noormi/Noormi/ListPage.xaml(.cs) | 
+Noormi/Noormi/MainPage.xaml(.cs)  |
+Noormi/Noormi/Splash.xaml(.cs)  |
+
+## 서버
+
+파일명 |
+:---- |
+server/src/*   |
 
 ## 코드 기여자
 **김희연**
-> Embedded/src/controller.c timer_cb   
-Embedded/src/controller.c motion_interrupted_cb   
-Embedded/src/controller.c service_app_create   
-   
-**오정민**
-> Embedded/src/network.c   
-> Embedded/src/network.h   
-> Noormi/Noormi/App.xaml(.cs)  
-> Noormi/Noormi/Device.cs  
-> Noormi/Noormi/ItemPage.xaml(.cs)  
-> Noormi/Noormi/ListPage.xaml(.cs)  
-> server/src/*   
+파일명 |
+:---- |
+Embedded/src/controller.c timer_cb   |
+Embedded/src/controller.c motion_interrupted_cb|   
+Embedded/src/controller.c service_app_create   |
 
+**오정민**
+파일명 |
+:---- |
+Embedded/src/network.c|  
+Embedded/src/network.c   |
+Embedded/src/network.h   |
+Noormi/Noormi/App.xaml(.cs)  |
+Noormi/Noormi/Device.cs  |
+Noormi/Noormi/ItemPage.xaml(.cs)  |
+Noormi/Noormi/ListPage.xaml(.cs)  |
+server/src/*   |
 
 **소호정**
-> Noormi/Noormi/ItemPage.xaml(.cs)  
-> Noormi/Noormi/ListPage.xaml(.cs)  
-> Noormi/Noormi/Splash.xaml(.cs)  
-> Noormi/Noormi/MainPage.xaml(.cs)
+파일명 |
+:---- |
+Noormi/Noormi/ItemPage.xaml(.cs)|  
+Noormi/Noormi/ListPage.xaml(.cs) | 
+Noormi/Noormi/Splash.xaml(.cs)  |
+Noormi/Noormi/MainPage.xaml(.cs)|
 
 ## 보드
 * RPI4 : 거리감지 센서, 헬리컬기어 펌프모터 연동, https://github.com/owjs3901/Noormi/Service
+
+## 아키텍처
+![Alt text](/img/아키텍처.png) 
 
 ## 회로도
 ![Alt text](/img/회로도.png)   
@@ -80,8 +103,10 @@ Embedded/src/controller.c service_app_create
 > GPIO 18 : 거리감지 센서   
 GPIO 24 : 헬리컬기어 펌프모터 // V2(12V) 외부전력과 연결   
 
-## 아키텍처
-![Alt text](/img/아키텍처.png) 
+PIN NUM | 설명 |
+---- | :----: |
+GPIO 18 | 거리감지 센서
+GPIO 24 | 헬리컬기어 펌프모터 컨트롤
 
 ## 구현사항
 * Peripheral GPIO
