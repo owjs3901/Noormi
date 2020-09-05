@@ -4,14 +4,14 @@ Xamarin + Tizen
 
 ## 구성원
 - **[오정민](https://github.com/owjs3901)(팀장 - HW/SW 개발자)**
-- 회로도 제작
+회로도 제작
   
 - **소호정(팀원 - SW 개발자)**
 
 - **김희연(팀원 - HW 개발자)**
-- RPI4 Tizen 환경설정
-- 하드웨어 설계 및 제작.
-- Pheripheral GPIO를 활용한 하드웨어 제어코드 작성
+RPI4 Tizen 환경설정
+하드웨어 설계 및 제작.
+Pheripheral GPIO를 활용한 하드웨어 제어코드 작성
   
 - **이지헌(팀원 - 디자이너)**
 
