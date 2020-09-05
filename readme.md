@@ -63,8 +63,8 @@ Embedded/src/controller.c service_app_create
 
 **소호정**
 > Noormi/Noormi/ItemPage.xaml(.cs)  
-> Noormi/Noormi/ListPage.xaml(.cs)
-> Noormi/Noormi/Splash.xaml(.cs)
+> Noormi/Noormi/ListPage.xaml(.cs)  
+> Noormi/Noormi/Splash.xaml(.cs)  
 > Noormi/Noormi/MainPage.xaml(.cs)
 
 ## 보드
