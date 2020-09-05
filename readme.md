@@ -30,7 +30,17 @@ Graphic Design
 어린아이도 안전하게 사용할 수 있고, 불필요한 접촉을 방지할 수 있는 손소독제를 위해 저희는 누르미를 개발하였습니다.
 
 ## 구상 이미지
-![Alt text](/img/3d.gif)     
+![Alt text](/img/3d.gif)  
+
+## 아키텍처
+![Alt text](/img/아키텍처.png) 
+
+## 회로도
+![Alt text](/img/회로도.png)   
+PIN NUM | 설명 |
+---- | :----: |
+GPIO 18 | 거리감지 센서
+GPIO 24 | 헬리컬기어 펌프모터 컨트롤
 
 # 파일 리스트
 
@@ -89,16 +99,6 @@ Noormi/Noormi/MainPage.xaml(.cs)|
 
 ## 보드
 * RPI4 : 거리감지 센서, 헬리컬기어 펌프모터 연동, https://github.com/owjs3901/Noormi/Service
-
-## 아키텍처
-![Alt text](/img/아키텍처.png) 
-
-## 회로도
-![Alt text](/img/회로도.png)   
-PIN NUM | 설명 |
----- | :----: |
-GPIO 18 | 거리감지 센서
-GPIO 24 | 헬리컬기어 펌프모터 컨트롤
 
 ## 구현사항
 * Peripheral GPIO
