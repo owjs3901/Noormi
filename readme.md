@@ -24,17 +24,17 @@ Pheripheral GPIO를 활용한 하드웨어 제어코드 작성
 
 ## 파일 리스트
 * 임베디드
-> Service/src/controller.c   
-Service/src/network.c   
-Service/src/network.h   
+> Embedded/src/controller.c   
+Embedded/src/network.c   
+Embedded/src/network.h   
 
 * 어플리케이션
 >   
 
 ## 코드 기여자
-* Service/src/controller.c timer_cb 김희연
-* Service/src/network.c 오정민
-* Service/src/network.h 오정민
+* Embedded/src/controller.c timer_cb 김희연
+* Embedded/src/network.c 오정민
+* Embedded/src/network.h 오정민
 
 ## 보드
 * RPI4 : 거리감지 센서, 헬리컬기어 펌프모터 연동, https://github.com/owjs3901/Noormi/Service
