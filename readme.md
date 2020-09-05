@@ -81,6 +81,9 @@ Embedded/src/controller.c service_app_create
 > GPIO 18 : 거리감지 센서   
 GPIO 24 : 헬리컬기어 펌프모터 // V2(12V) 외부전력과 연결   
 
+## 아키텍처
+![Alt text](/img/아키텍처.png) 
+
 ## 구현사항
 * Peripheral GPIO
 
