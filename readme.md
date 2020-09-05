@@ -1,3 +1,6 @@
+# 시연영상
+[![Watch the video](https://img.youtube.com/vi/anyHbAet2sY/hqdefault.jpg)](https://www.youtube.com/watch?v=anyHbAet2sY)
+-------------------------   
 # 누르미
 <img src="/img/logo2.svg" width="50%" height="50%">
 2020 하드웨어 해커톤
