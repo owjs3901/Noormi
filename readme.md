@@ -26,7 +26,7 @@ Product 3D modeling
 Graphic Design   
 영상 편집
 
-![Alt text](/img/단체사진.jpb)  
+![Alt text](/img/단체사진.jp)  
 
 ## 개요
 코로나로 인한 언택트 시대, 불가피한 접촉에서의 감염을 막기위해 주변 곳곳에 손 소독제가 배치되고 있습니다.
