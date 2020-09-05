@@ -60,11 +60,13 @@ Eina_Bool timer_cb(void *data)
 {
 	time_t now;
 
-	time(&now);
+	time(&now); //현재시각을 now에 저장.
 
 	_I("now : %d\npreTime : %d\nValue : %d",now, preTime, now - preTime); //디버깅용 코드
 
-	/* 거리센서에서 인식이 될 경우 1~2초 동안 인식될때만 모터 동작.
+	/*
+	 *  now - preTime == 모션반응이 일어났을때부터 현재까지의 시간.
+	 * 거리센서에서 인식이 될 경우 1~2초 동안 인식될때만 모터 동작.
 	 * 그 이후에도 계속 손을 대고 있을경우에는 모터가 동작되지 않아 손소독제가 계속해서 나오는것을 방지.
 	 */
 	if(now - preTime > 1 && now - preTime <= 2){
@@ -81,7 +83,9 @@ Eina_Bool timer_cb(void *data)
 	return ECORE_CALLBACK_RENEW;
 }
 
-
+/*
+ * 모션 반응이 일어났을 떄 현재 시각을 preTime에 저장
+ */
 static void motion_interrupted_cb(uint32_t motion_value, void *user_data)
 {
 	//time 시작
@@ -90,10 +94,12 @@ static void motion_interrupted_cb(uint32_t motion_value, void *user_data)
 	return;
 }
 
-
+/*
+ * ecore_timer_add 에서 timer_cb함수 1초단위로 호출.
+ */
 static bool service_app_create(void *user_data)
 {
-	ecore_timer_add(1, timer_cb, NULL);
+	ecore_timer_add(1, timer_cb, NULL); //타이머 등록
 
 	ecore_main_loop_begin();
 	return true;
