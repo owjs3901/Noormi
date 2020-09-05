@@ -23,9 +23,13 @@ Pheripheral GPIO를 활용한 하드웨어 제어코드 작성
 또한 앱을 통하여 설치되어 있는 다수의 세정제들을 관리할 수도 있습니다.
 
 ## 파일 리스트
-* Service/src/controller.c
-* Service/src/network.c
-* Service/src/network.h
+* 임베디드
+> Service/src/controller.c   
+Service/src/network.c   
+Service/src/network.h   
+
+* 어플리케이션
+>   
 
 ## 코드 기여자
 * Service/src/controller.c timer_cb 김희연
