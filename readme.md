@@ -95,10 +95,6 @@ Noormi/Noormi/MainPage.xaml(.cs)|
 
 ## 회로도
 ![Alt text](/img/회로도.png)   
-* GPIO PIN   
-> GPIO 18 : 거리감지 센서   
-GPIO 24 : 헬리컬기어 펌프모터 // V2(12V) 외부전력과 연결   
-
 PIN NUM | 설명 |
 ---- | :----: |
 GPIO 18 | 거리감지 센서
@@ -111,6 +107,6 @@ GPIO 24 | 헬리컬기어 펌프모터 컨트롤
 - 서버
   > Nodejs + express 기반 http  서버
 - 임베디드
-  > RPI4 + Tizen
+  > RPI4 + Tizen (C Native Application)
 - 클라이언트
   > Xamarin (Android)
