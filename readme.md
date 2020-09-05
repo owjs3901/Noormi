@@ -42,7 +42,7 @@ Graphic Design
 ![Alt text](/img/3d.gif)  
 
 ## 앱 구현
-![Alt text](/app.gif)  
+![Alt text](/img/app.gif)  
 
 ## 아키텍처
 ![Alt text](/img/아키텍처.png) 
