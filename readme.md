@@ -1,5 +1,5 @@
 # 누르미
-<img src="/img/logo.svg" width="50%" height="50%">
+<img src="/img/logo2.svg" width="50%" height="50%">
 2020 하드웨어 해커톤
 Xamarin + Tizen
 
@@ -15,6 +15,9 @@ Xamarin + Tizen
 Pheripheral GPIO를 활용한 하드웨어 제어코드 작성
   
 - **이지헌(팀원 - 디자이너)**
+>APP GUI Design   
+Product 3D modeling   
+Graphic Design   
 
 ## 개요
 코로나로 인한 언택트 시대, 불가피한 접촉에서의 감염을 막기위해 주변 곳곳에 손 소독제가 배치되고 있습니다.
