@@ -26,6 +26,13 @@ router.get('/all', async (req: Request, res: Response) => {
     return res.status(OK).json({devices});
 });
 
+
+router.get('/cost', async (req: Request, res: Response) => {
+    devices[0].battery--;
+    return res.status(OK).json({devices});
+});
+
+
 /******************************************************************************
  *                                     Export
  ******************************************************************************/
