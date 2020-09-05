@@ -113,7 +113,7 @@ Noormi/Noormi/MainPage.xaml(.cs)|
 * RPI4 : 거리감지 센서, 헬리컬기어 펌프모터 연동, https://github.com/owjs3901/Noormi/Service
 
 ## 구현사항
-* Peripheral GPIO
+* Peripheral GPIO : 헬리컬기어 펌프모터, 적외선 거리감지 센서 
 
 ## 기술
 - 서버
