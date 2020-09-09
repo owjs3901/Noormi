@@ -5,6 +5,8 @@
 <img src="/img/logo2.svg" width="50%" height="50%">
 2020 하드웨어 해커톤
 
+
+
 ## 구성원
 - **[오정민](https://github.com/owjs3901)(팀장 - HW/SW 개발자)**
 > 프로젝트 매니저  
